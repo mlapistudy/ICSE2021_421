@@ -1,0 +1,6 @@
+=== adithram/stock_semantics
+https://github.com/adithram/stock_semantics/blob/6ed2c7e9da1d0e7589795aae2eb7973e8b846f80/rss_scrape.py
+=== AimAmit/Tweet-sentiment
+https://github.com/AimAmit/Tweet-sentiment/blob/0fbb1731c8283e350f28583ec99b6e8059d564da/tweet_stream.py
+=== j-bernardi/hack-4d-cards-against-humanity
+https://github.com/j-bernardi/hack-4d-cards-against-humanity/blob/0482c6a9b98914c5bbf78ede11e5944ab1f7e8f2/sentiment_analyses/google_sentiment.py
