@@ -29,6 +29,8 @@ google-cloud-vision==1.0.0
 
 google-cloud-speech==2.0.0
 
+google-cloud-texttospeech==2.2.0
+
 
 ## Credential
 
@@ -37,5 +39,6 @@ Google Cloud AI Services require some set up before using, including installing 
 1. Vision: https://cloud.google.com/vision/docs/setup
 2. Speech-to-Text: https://cloud.google.com/speech-to-text/docs/quickstart-client-libraries
 3. Language: https://cloud.google.com/natural-language/docs/setup
+4. Text-to-Speech: https://cloud.google.com/text-to-speech/docs/quickstart-client-libraries
 
 Please change line `os.environ["GOOGLE_APPLICATION_CREDENTIALS"]='your-credential.json'` to the path of your certification.

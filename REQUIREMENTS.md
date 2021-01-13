@@ -36,6 +36,8 @@ google-cloud-vision==1.0.0
 
 google-cloud-speech==2.0.0
 
+google-cloud-texttospeech==2.2.0
+
 ### Ruby>=2.4
 
 octokit>=4.18.0

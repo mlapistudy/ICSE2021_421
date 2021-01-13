@@ -10,6 +10,7 @@ Please follow the instructions in `../Tools/API_wrappers/readme.md` to set up th
 
 You may use either the functions in `calling_apis.py` or `../Tools/API_wrappers` to test the APIs.
 
+Please change line `os.environ["GOOGLE_APPLICATION_CREDENTIALS"]='your-credential.json'` to the path of your certification.
 
 ## 1. Text-detection and document-text-detection (Section IV.A)
 
@@ -82,4 +83,10 @@ It should use both `score` and `magnitude`  fields to judge the sentiment of the
 
 They could be easily triggered by extremely large inputs, e.g. 5-minute audio, 10MB images, 5000-character text.
 
+Folder `performance` contains text inputs for latency profiling in our paper.
+
+1. `vision`: It includes 100 images from 4 categories. We tested latency under different image sizes by downsampling.
+2. `speech-to-text`: It includes audio with mp3 format. All audios are in English. 
+3. `text-to-speech`: It includes several text files for speech synthesize. Each file is a seperate input.
+4. `language`: It includes several text files for NLP APIs. The `prev_` suffixed files come from a newspaper, `rouss_` from a philosophical text, and  `wind_` from a novel.
 
