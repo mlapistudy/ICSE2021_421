@@ -21,7 +21,7 @@ Thumbs.db
 
 # not ready data, will add later
 ##############
-All_benchmarks/*
-Mis-uses/*
+# All_benchmarks/*
+# Mis-uses/*
 # ML_API-421.pdf
 *.json
