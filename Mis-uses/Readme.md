@@ -1,6 +1,6 @@
 # README
 
-This folder contains a collections 247 ML-API misuses in 360 applications used in our manual study.
+This folder contains a collection of ML-API misuses in 360 applications used in our manual study.
 
 We provide data in both excel and csv format.
 
