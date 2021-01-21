@@ -2,11 +2,20 @@ import sys
 import re
 from utils.utils import print_writeofd
 
-# First argument is the output file from async_main_aws.py
-ifd = open(sys.argv[1], 'r')
+# First argument is whether or not to proceed with manual checking:
+if sys.argv[1] == '-m':
+    MANUAL_CHECKING = True
+elif sys.argv[1] == '-a':
+    MANUAL_CHECKING = False
+else:
+    print("The first argument must be either -m or -a, see README.md for details")
+    exit(1)
 
-# Second argument is the output file for a list of all repos
-ofd = open(sys.argv[2], 'w')
+# Second argument is the output file from async_main_google.py
+ifd = open(sys.argv[2], 'r')
+
+# Third argument is the output file for a list of all repos
+ofd = open(sys.argv[3], 'w')
 
 
 # All files number
@@ -67,6 +76,35 @@ def print_code(i, j, lines):
             break
         i += 1
 
+safe_list = ["if response:", "job_id = response['JobId']", 
+"synthesis_task = {'taskId': response['SynthesisTask']['TaskId']", "'taskStatus': 'inProgress'}", "taskId = response['SynthesisTask']['TaskId']"]
+
+def check_safe_list(string):
+    for safes in safe_list:
+        if safes in string:
+            return True
+    return False
+
+def judge_code(i, j, lines):
+    while i < j:
+        if "Nodes in between start statement and while statement" in lines[i]:
+            i_copy = i + 1
+            while "------" not in lines[i_copy]:
+                if lines[i_copy].isspace():
+                    i_copy += 1
+                    continue
+                if check_safe_list(lines[i_copy]):
+                    i_copy += 1
+                    continue
+                if "operation.done" in lines[i_copy] or "operation.result" in lines[i_copy]:
+                    return True
+                return False
+                i_copy += 1
+            return True
+        i += 1
+    return False
+        
+
 lines = ifd.readlines()
 i = 0
 while i < len(lines):
@@ -97,18 +135,61 @@ while i < len(lines):
     # Judge if this is a use lambda function case
     # If only relying on auto-tool: this should be a parallelism-used case
     if "Use Lambda Function" in lines[j - 1]:
-        use_lambda += 1
-        ofd.write("use_lambda: {}".format(lines[k]))
-        i = j
-        continue
+        if MANUAL_CHECKING:
+            print("use_lambda: {}".format(lines[k]))
+            print("Please inspect the above. Enter 1 if this is a no parallelism case, and enter 2 if this is a use lambda case")
+            user = input()
+            while user != '1' and user != '2':
+                print("PRESS 1 OR 2, NOT ANYTHING ELSE!")
+                user = input()
+            if user == '1':
+                det_no_para += 1
+                print_writeofd("use_lambda (no_parallelism): {}".format(lines[k].strip("\n")), ofd)
+                i = j
+                continue
+            elif user == '2':
+                use_lambda += 1
+                print_writeofd("use_lambda (use_lambda): {}".format(lines[k].strip("\n")), ofd)
+                i = j
+                continue
+        else:
+            use_lambda += 1
+            ofd.write("use_lambda: {}".format(lines[k]))
+            i = j
+            continue
 
     # Judge if this is a no pattern identified case
     # If only relying on auto-tool: this should be a parallelism-used case
     if "NO PATTERN IDENTIFIED" in lines[j - 1]:
-        nopattern += 1
-        ofd.write("no_pattern: {}".format(lines[k]))
-        i = j
-        continue
+        if MANUAL_CHECKING:
+            print("\n\n\n\n\n\n")
+            print_writeofd("no_pattern: {}".format(lines[k].strip("\n")), ofd)
+            print("Please inspect the above. Enter 1 if this is a no parallelism case, and enter 2 if this is a use-parallelism case, and enter 3 if this shouldn't count")
+            user = input()
+            while user != '1' and user != '2' and user != '3':
+                print("PRESS 1 OR 2 OR 3, NOT ANYTHING ELSE!")
+                user = input()
+            if user == '1':
+                det_no_para += 1
+                print_writeofd("no_pattern (no_parallelism): {}".format(lines[k].strip("\n")), ofd)
+                i = j
+                continue
+            elif user == '2':
+                det_para += 1
+                print_writeofd("no_pattern (parallelism): {}".format(lines[k].strip("\n")), ofd)
+                i = j
+                continue
+            # These are for cases where the repo is actually mis-using the API
+            elif user == '3':
+                proces_exception += 1
+                print_writeofd("no_pattern (process_exception): {}".format(lines[k].strip("\n")), ofd)
+                i = j
+                continue
+        else:
+            nopattern += 1
+            ofd.write("no_pattern: {}".format(lines[k]))
+            i = j
+            continue
 
     # Judge if this is a no use of async case
     # Such project should not be counted towards the total count of projects
@@ -126,13 +207,6 @@ while i < len(lines):
         i = j
         continue
 
-    # Judge if this is a no use of parallelism case
-    if "No use of parallelism" in lines[j - 1]:
-        noparrelism += 1
-        ofd.write("no_parallelism: {}".format(lines[k]))
-        i = j
-        continue
-
     # At this point there shouldn't be any "operating missing", sanity check:
     if scan_block(lines, i, j, "operation") and scan_block(lines, i, j, "missing") and (not scan_block(lines, i, j, "Pattern identified")):
         print("Operation missing while it's neither use lambda nor no pattern identified: {}".format(lines[k]))
@@ -142,21 +216,35 @@ while i < len(lines):
     if scan_block(lines, i, j, "Nodes in between start statement and while statement"):
         # If these two numbers equal then need to prompt users:
         if scan_block_numbers(lines, i, j, "Nodes in between start statement and while statement") == scan_block_numbers(lines, i, j, "Pattern identified"):
-            print("\n\n\n\n\n\n")
-            print_code(i, j, lines)
             between_code += 1
-            print("Please inspect the above. Enter 1 if this is a no pattern case, and enter 2 if we can proceed")
-            user = input()
-            while user != '1' and user != '2':
-                print("PRESS 1 OR 2, NOT ANYTHING ELSE!")
+            if MANUAL_CHECKING:
+                print("\n\n\n\n\n\n")
+                print_code(i, j, lines)
+                print("Please inspect the above. Enter 1 if can proceed, and enter 2 if this is a use_parallelism case")
                 user = input()
-            if user == '1':
-                det_no_pattern += 1
-                print_writeofd("code_between (no_pattern): {}".format(lines[k]), ofd)
-                i = j
-                continue
-            elif user == '2':
-                print_writeofd("code_between (proceeds): {}".format(lines[k]), ofd)
+                while user != '1' and user != '2':
+                    print("PRESS 1 OR 2, NOT ANYTHING ELSE!")
+                    user = input()
+                if user == '1':
+                    print_writeofd("code_between (proceeds): {}".format(lines[k].strip('\n')), ofd)
+                elif user == '2':
+                    det_para += 1
+                    print_writeofd("code_between (parallelism): {}".format(lines[k].strip('\n')), ofd)
+                    i = j
+                    continue
+            # If not manual checking, then just count this as a no parallelism use case
+            else:
+                if not judge_code(i, j, lines):
+                    det_no_pattern += 1
+                    i = j
+                    continue
+
+    # Judge if this is a no use of parallelism case
+    if "No use of parallelism" in lines[j - 1]:
+        noparrelism += 1
+        ofd.write("no_parallelism: {}".format(lines[k]))
+        i = j
+        continue
 
 
     while i < j:
@@ -164,91 +252,85 @@ while i < len(lines):
             i_copy = i
             while i_copy < j:
                 if "BOTH IDENTIFIED IN THE SAME FILE" in lines[i_copy]:
-                    print("\n\n\n\n\n\n")
-                    print(lines[i])
-                    i += 1
-                    while i < j and "========================" not in lines[i]:
+                    # Only do the following if doing manual checking
+                    if MANUAL_CHECKING:
+                        possible_para += 1
+                        print("\n\n\n\n\n\n")
                         print(lines[i])
                         i += 1
-                    if i != j:
-                        print(lines[i])
-                    print("Please inspect the above. Enter 1 if this is a no parallelism case, and enter 2 if this is a use-parallelism case")
-                    user = input()
-                    while user != '1' and user != '2':
-                        print("PRESS 1 OR 2, NOT ANYTHING ELSE!")
+                        while i < j and "========================" not in lines[i]:
+                            print(lines[i])
+                            i += 1
+                        if i != j:
+                            print(lines[i])
+                        print("Please inspect the above. Enter 1 if this is a no parallelism case, and enter 2 if this is a use-parallelism case")
                         user = input()
-                    possible_para += 1
-                    if user == '1':
-                        det_no_para += 1
-                        print_writeofd("possible_parallelism (no_parallelism): {}".format(lines[k]), ofd)
-                    elif user == '2':
-                        det_para += 1
-                        print_writeofd("possible_parallelism (parallelism): {}".format(lines[k]), ofd)
-                    break
+                        while user != '1' and user != '2':
+                            print("PRESS 1 OR 2, NOT ANYTHING ELSE!")
+                            user = input()
+                        
+                        if user == '1':
+                            det_no_para += 1
+                            print_writeofd("possible_parallelism (no_parallelism): {}".format(lines[k].strip("\n")), ofd)
+                        elif user == '2':
+                            det_para += 1
+                            print_writeofd("possible_parallelism (parallelism): {}".format(lines[k].strip("\n")), ofd)
+                        break
+                    else:
+                        i += 1
+                        while i < j and "========================" not in lines[i]:
+                            i += 1
+                        ofd.write("possible_parallelism: {}".format(lines[k]))
+                        possible_para += 1
+                        break
                 i_copy += 1
             if i_copy == j:
                 ofd.write("no_parallelism: {}".format(lines[k]))
                 noparrelism += 1
                 break
         i += 1
-            
 
-            
-            
-
-
-    # while i < j:
-    #     if "***" in lines[i]:
-    #         i_copy = i
-    #         while i < j:
-    #             if "BOTH IDENTIFIED IN THE SAME FILE" in lines[i]:
-    #                 ofd.write("parallel: {}".format(lines[k]))
-    #                 parallel += 1
-    #                 break
-    #             i += 1
-    #         if i != j:
-    #             i = i_copy
-    #             while i < j:
-    #                 ofd2.write(lines[i])
-    #                 i += 1
-    #         elif i == j:
-    #             ofd.write("no_parallelism: {}".format(lines[k]))
-    #             noparrelism += 1
-    #     if i >= len(lines):
-    #         break     
-    #     i += 1
-
-    after = get_all_add_up()
-    if begin == after or after != allfile:
-        print("There is one not accounted for: {}".format(lines[k]))
-        exit(1)
+    # after = get_all_add_up()
+    # if begin == after or after != allfile:
+    #     print("There is one not accounted for: {}".format(lines[k]))
+    #     exit(1)
     i = j
 
 ofd.write("\n\n==================================================================\n")
-print_writeofd("{}, Total files searched".format(allfile), ofd)
-print_writeofd("BEFORE MANUAL INSPECTION:", ofd)
-print_writeofd("{}, No use of Async".format(no_async), ofd)
-print_writeofd("{}, Github search exceptions".format(github_exception), ofd)
-print_writeofd("{}, Processing exceptions".format(proces_exception), ofd)
-print_writeofd("{}, Use of Lambda Function".format(use_lambda), ofd)
-print_writeofd("{}, No retrieve result".format(no_retrieve), ofd)
-print_writeofd("{}, No pattern identified".format(nopattern + det_no_pattern), ofd)
-print_writeofd("{}, No use of parallelism".format(noparrelism), ofd)
-print_writeofd("{}, Possible use of parallel cases".format(possible_para), ofd)
-print_writeofd("{}, Codes in between (not counted towards the final count below)".format(between_code), ofd)
-all_above = get_all_add_up()
-print_writeofd("", ofd)
-print_writeofd("{}, Adding all above together".format(all_above), ofd)
-print_writeofd("", ofd)
-print_writeofd("", ofd)
-print_writeofd("After MANUAL INSPECTION:", ofd)
-print_writeofd("{}, No use of Async".format(no_async), ofd)
-print_writeofd("{}, Github search exceptions".format(github_exception), ofd)
-print_writeofd("{}, Processing exceptions".format(proces_exception), ofd)
-print_writeofd("{}, Use of Lambda Function".format(use_lambda), ofd)
-print_writeofd("{}, No retrieve result".format(no_retrieve), ofd)
-print_writeofd("{}, No pattern identified".format(nopattern + det_no_pattern), ofd)
-print_writeofd("{}, No use of parallelism".format(noparrelism + det_no_para), ofd)
-print_writeofd("{}, Use of parallel cases".format(det_para), ofd)
+if not MANUAL_CHECKING:
+    print_writeofd("{}, Total files searched".format(allfile), ofd)
+    print_writeofd("BEFORE MANUAL INSPECTION:", ofd)
+    print_writeofd("{}, No use of Async".format(no_async), ofd)
+    print_writeofd("{}, Github search exceptions".format(github_exception), ofd)
+    print_writeofd("{}, Processing exceptions".format(proces_exception), ofd)
+    print_writeofd("{}, Use of Lambda Function".format(use_lambda), ofd)
+    print_writeofd("{}, No retrieve result".format(no_retrieve), ofd)
+    print_writeofd("{}, No pattern identified".format(nopattern + det_no_pattern), ofd)
+    print_writeofd("{}, No use of parallelism".format(noparrelism), ofd)
+    print_writeofd("{}, Possible use of parallel cases".format(possible_para), ofd)
+    # print_writeofd("{}, Codes in between (not counted towards the final count below)".format(between_code), ofd)
+    print_writeofd("RELYING ON AUTO TOOL: {} NO USE OF PARALELLISM".format(noparrelism), ofd)
+    print_writeofd("RELYING ON AUTO TOOL: {} PARALELLISM USED".format(possible_para + nopattern + det_no_pattern + use_lambda), ofd)
+    print_writeofd("RELYING ON AUTO TOOL: {} RELEVANT TOTAL PROJECTS".format(noparrelism + possible_para + nopattern + det_no_pattern + use_lambda), ofd)
+# all_above = get_all_add_up()
+# print_writeofd("", ofd)
+# print_writeofd("{}, Adding all above together".format(all_above), ofd)
+# print_writeofd("", ofd)
+# print_writeofd("", ofd)
+elif MANUAL_CHECKING:
+    print_writeofd("", ofd)
+    print_writeofd("", ofd)
+    print_writeofd("After MANUAL INSPECTION:", ofd)
+    print_writeofd("{}, No use of Async".format(no_async), ofd)
+    print_writeofd("{}, Github search exceptions".format(github_exception), ofd)
+    print_writeofd("{}, Processing exceptions".format(proces_exception), ofd)
+    print_writeofd("{}, Use of Lambda Function".format(use_lambda), ofd)
+    print_writeofd("{}, No retrieve result".format(no_retrieve), ofd)
+    print_writeofd("{}, No pattern identified".format(nopattern + det_no_pattern), ofd)
+    print_writeofd("{}, No use of parallelism".format(noparrelism + det_no_para), ofd)
+    print_writeofd("{}, Use of parallel cases".format(det_para), ofd)
+    print_writeofd("RELYING ON MANUAL CHECKING: {} NO USE OF PARALELLISM".format(noparrelism + det_no_para), ofd)
+    print_writeofd("RELYING ON MANUAL CHECKING: {} PARALELLISM USED".format(det_para + use_lambda), ofd)
+    print_writeofd("RELYING ON MANUAL CHECKING: {} RELEVANT TOTAL PROJECTS".format(noparrelism + det_no_para + det_para + use_lambda), ofd)
 
 ofd.close()

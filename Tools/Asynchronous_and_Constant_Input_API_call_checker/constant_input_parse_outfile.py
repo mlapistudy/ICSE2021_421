@@ -21,11 +21,14 @@ excep = 0
 lines = ifd.readlines()
 i = 0
 j = 0
-printed_ent = 0
-printed_par = 0
+printed_ent_count = 0
+printed_par_count = 0
 excepted = 0
 
 while i < len(lines):
+    printed_ent = 0
+    experi = 0
+    printed_par = 0
     allfile += 1
     j = i + 1
     while j < len(lines) and lines[j] != "=================================================\n":
@@ -35,6 +38,14 @@ while i < len(lines):
     # Now i and j stores the start and end of one search snippet
     k = i + 1
     while i < j:
+        if "Entirely Constant: ||\n" == lines[i] or "Entirely Constant: string||\n" == lines[i] or "Entirely Constant:\n" == lines[i]:
+            # printed_ent += 1
+            i += 1
+            continue
+        # if "Entirely Constant: Hello, World!||\n" == lines[i] or "Entirely Constant: hello world||\n" == lines[i]:
+        #     experi = 1
+        #     i += 1
+        #     continue
         if "Entirely Constant" in lines[i]:
             print(re.sub('\n', '', lines[i]))
             printed_ent = 1
@@ -44,6 +55,11 @@ while i < len(lines):
         i += 1
         if "EXCEPTION" in lines[i]:
             excepted = 1
+
+    # if printed_ent or experi:
+    #     printed_ent_count += 1
+    # if printed_par:
+    #     printed_par_count += 1
 
     if printed_ent == 1 or printed_par == 1: 
         print("Does the above snippet contains an actual string constant? If constant, press 1, if not, press 2, if looks like for experimental purpose, press 3")
@@ -64,7 +80,6 @@ while i < len(lines):
             experi_ent += 1
             ofd1.write("Entirely Experimental: ")
             ofd1.write(lines[k])
-        allocc += 1
         printed_ent = 0
         printed_par = 0
         print("\n\n\n\n\n\n")
@@ -80,3 +95,9 @@ print_writeofd("Entirely Constants found: {}".format(accocc_ent), ofd1)
 print_writeofd("Partly Constants found: {}".format(accocc_par), ofd1)
 print_writeofd("Experimental Constants found: {}".format(experi_ent), ofd1)
 print_writeofd("Exceptions occurred: {}".format(excep), ofd1)
+print_writeofd("RELYING ON AUTO TOOL: {} CONSTANT INPUTS".format(accocc_ent + experi_ent), ofd1)
+# print_writeofd("RELYING ON AUTO TOOL: {} NON-CONSTANT INPUTS".format(allfile - excep - printed_ent), ofd1)
+print_writeofd("RELYING ON AUTO TOOL: {} RELEVANT TOTAL PROJECTS".format(allfile - excep), ofd1)
+print_writeofd("RELYING ON MANUAL CHECKING: {} CONSTANT INPUTS".format(accocc_ent), ofd1)
+# print_writeofd("RELYING ON MANUAL CHECKING: {} NON-CONSTANT INPUTS".format(allfile - excep - printed_ent - ), ofd1)
+print_writeofd("RELYING ON MANUAL CHECKING: {} RELEVANT TOTAL PROJECTS".format(allfile - excep), ofd1)
