@@ -251,15 +251,17 @@ In this step, the files might interactively prompt detected entirely constants i
 Our paper's results related to these tools, contained in **section VII**, were obtained using the crawled repo lists in Sept. 2020. The `async_main_aws.py`, `async_main_google.py`, `constant_input_main_aws.py`, and `constant_input_main_google.py` (referred to as the "static analyzers" in tables below) were ran in Sept. 2020. If one runs these static analyzers on the same repo list (first column in tables below) again in a later date, some minor discrepencies might be observed due to projects being taken down or modified. Thus, we include the final output of these analyers in folder `results` (second column in tables below). To replicate the results of paper, one can run just run the `parse_outfile` scripts to get from second column to third column, as documented in [async](#async_usage_output_file) and [constant](#constant_output_file) output file sections. The complete workflow of these tools should be:
 
 **Async tools:**
-| Input Repo List<br>(contained in `repo_list`) | Output of static analyzers<br>(contained in `results`) | Output of `async_parse_outfile_*` scripts<br>(contained in `results`)          |
+| Input Repo List<br>(contained in `repo_list`) | Output of static analyzers<br>(contained in `results`) | Output of `async_parse_outfile_*.py` scripts<br>(contained in `results`)          |
 |-----------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------|
 | `speechclient_res_Python.txt`                 | `google_async_stt_list.txt`                            | `google_async_stt_list_auto.txt`<br>`google_async_stt_list_manual.txt` |
 | `polly_res_python.txt`                        | `aws_async_tts_out.txt`                                | `aws_async_tts_list_auto.txt`<br>`aws_async_tts_list_manual.txt`       |
 | `comprehend_res_python.txt`                   | `aws_async_nlp_out.txt`                                | `aws_async_nlp_list_auto.txt`<br>`aws_async_nlp_list_manual.txt`       |
 | `transcribe_res_python.txt`                   | `aws_async_stt_out.txt`                                | `aws_async_stt_list_auto.txt`                                          |
 
+The `*_auto.txt` files in the last column were ran with the `-a` flag turned on in `async_parse_outfile_*.py`, and the `*_manual.txt` files in the last column were ran with the `-m` flag turned on in `async_parse_outfile_*.py`
+
 **Constant input tools:**
-| Input Repo List<br>(contained in `repo_list`) | Output of static analyzers<br>(contained in `results`) | Output of `constant_input_parse_outfile` scripts<br>(contained in `results`) |
+| Input Repo List<br>(contained in `repo_list`) | Output of static analyzers<br>(contained in `results`) | Output of `constant_input_parse_outfile.py` scripts<br>(contained in `results`) |
 |-----------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------|
 | `texttospeech_res_Python.txt`                 | `google_constant_out.txt`                              | `google_constant_list.txt`                                    |
 | `polly_res_Python.txt`                        | `aws_constant_out.txt`                                 | `aws_constant_list.txt`                                       |
