@@ -6,11 +6,13 @@ The artifact has been published as [a project on Github](https://github.com/mlap
 
 ## What's inside the artifact:
 
-Inside the artifact, we provide an organized database used in our manual studies for availability. In addition, for reusability, we provide code and data of our tools/checkers and the instructions for setting up environment.
+For availability and reusability, we provide an organized database used in our manual studies. In addition, we provide code and data of our tools/checkers and the instructions for setting up working environment.
 
 Below are details of what is included in each part:
 
-### Organized database (for availability)
+### Organized database
+
+The result of TABLE III (manual study part) in our paper can be reproduced by this organized databse. It contains:
 
 1. A suite of 360 non-trivial projects that use Google/Amazon ML APIs, including vision, speech, and language. Located at `All_benchmarks` folder, containing
    1. software project name
@@ -18,19 +20,39 @@ Below are details of what is included in each part:
    3. exact release number
    4. used API
    5. description
-2. A collections 247 ML-API misuses in these projects. Located at `Mis-uses` folder, containing
+2. A collection of ML-API misuses in these projects (involves 249 projects). Located at `Mis-uses` folder, containing
    1. the exact file and source-code line location of the misuse 
    2. a detailed explanation, including the anti-pattern category and a patch suggestion
 3. Test cases to trigger the misuse. Located at `Trigger_misuses` folder.
 
-### Tools/Checkers (reusability)
+### Tools/Checkers
 
-Located in `Tools` folder. Each contains a seperate README file describing more details and instructions.
+The result of TABLE III (auto detection part) and Section VII in our paper can be reproduced by these tools/checker.
 
-1. Output mis-interpretation checker
-2. Asynchronous API call checker
-3. Constant-parameter API call checker
-4. API wrappers
+They are located in `Tools` folder. Each contains a seperate README file describing more details and instructions.
+
+1. Output mis-interpretation checker (Section VII, first subtitle)
+   1. It is a static checker to automatically detect mis-uses of the sentiment-detection API’s output, a type of accuracy bugs discussed in Section IV-B.
+2. Asynchronous API call checker (Section VII, second subtitle)
+   1. It automatically identifis problems of calling asynchronous APIs in a synchronous, blocking way, a type of performance mis-use discussed in Section V-B.
+3. Constant-parameter API call checker (Section VII, third subtitle)
+   1. It automatically identifies speech synthesis API calls that use constant inputs, a type of performance mis-use discussed in Section V-D.
+4. API wrappers (Section VII, last subtitle)
+   1. It wraps cloud APIs to tackle the anti-patterns of missing input validation (Section IV-C), forgetting parallel APIs (Section V-C), misuse of asynchronous APIs (Section V-B), and unnecessarily high-resolution inputs (Section V-E).
+
+
+
+## How to obtain paper's result from our tool?
+
+### Manual Study
+
+Our manual study result in Table III could be obtained from `Mis-uses` folder, by statistic analysis on mis-use list.
+
+### Auto Detection
+
+Our auto detection result in TABLE III and Section VII could be obtained from `Tools` folder. Please follow `REQUIREMENTS.md` to set up environment and instructions in  `Tools` folder to reproduce the result.
+
+These tools are applied to public GitHub repositories using ML cloud APIs. The result obtained by our tool may differ between two execution, as GitHub repositories might be created, updated, and deleted during these process. For the unchanged repositores, our tools will always provide same result. The result in our paper are obtained right before paper submission (August 2020). 
 
 
 
