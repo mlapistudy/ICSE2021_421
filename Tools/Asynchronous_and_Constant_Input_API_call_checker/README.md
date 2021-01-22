@@ -263,7 +263,7 @@ The `*_auto.txt` files in the last column were ran with the `-a` flag turned on 
 **Constant input tools:**
 | Input Repo List<br>(contained in `repo_list`) | Output of static analyzers<br>(contained in `results`) | Output of `constant_input_parse_outfile.py` scripts<br>(contained in `results`) |
 |-----------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------|
-| `texttospeech_res_Python.txt`                 | `google_constant_out.txt`                              | `google_constant_list.txt`                                    |
-| `polly_res_Python.txt`                        | `aws_constant_out.txt`                                 | `aws_constant_list.txt`                                       |
+| `texttospeech_res_Python.txt`                 | `google_constant_out.txt`                              | `google_constant_list_auto.txt` <br> `google_constant_list_manual.txt`                                  |
+| `polly_res_Python.txt`                        | `aws_constant_out.txt`                                 | `aws_constant_list_auto.txt` <br> `aws_constant_list_manual.txt`                                       |
 
 The final counts from the last column of these two tables make up the data in **section VII** of our paper.

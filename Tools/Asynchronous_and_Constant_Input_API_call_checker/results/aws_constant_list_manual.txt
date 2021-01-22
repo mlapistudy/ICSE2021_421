@@ -1,0 +1,283 @@
+Entirely constant: https://github.com/oscarhilton/746
+Entirely constant: https://github.com/indrajitkar/ai
+Entirely constant: https://github.com/MarkTSW/A.I-Programs
+Entirely constant: https://github.com/tenlahung/aipython
+https://github.com/frivas/alexa-mixed-polly
+Entirely constant: https://github.com/swb1701/AlexaPi
+Entirely constant: https://github.com/khwada/alexa_polly_sample
+Entirely constant: https://github.com/jaws-ug-kobe/alexa-voice-maid
+https://github.com/ganatradeval/AmazonPolly
+https://github.com/nullbyte91/amazon-polly-TTS
+Entirely constant: https://github.com/UM-ARM-Lab/amazon_ros_speech
+Entirely constant: https://github.com/subhaananthi/AML_assign
+Entirely constant: https://github.com/multani/anki-japanese-addon
+Entirely constant: https://github.com/terrillo/Archives
+https://github.com/sandroormeno/Asistente-de-voz-
+Auto tool wrong detection: https://github.com/Urmi20/Assignment3
+Entirely constant: https://github.com/Exponentia/asteriskpython
+Entirely constant: https://github.com/yonghankim/audio_streaming
+Entirely constant: https://github.com/aaaaatoz/awsAI
+https://github.com/emurillojr/awsBackend
+Entirely constant: https://github.com/aws-samples/aws-builders-fair-projects
+https://github.com/aws-samples/aws-builders-fair-projects
+https://github.com/jonkyops/awscerts
+Entirely Experimental: https://github.com/sivajiitla/aws_code
+Entirely Experimental: https://github.com/awsdocs/aws-doc-sdk-examples
+Entirely Experimental: https://github.com/Venkat1505/AWS-Doc-SDK-Examples
+Entirely Experimental: https://github.com/appsparkler/aws-example-code
+Entirely Experimental: https://github.com/arunmastermind/AWS-examples-using-BOTO3
+Entirely constant: https://github.com/wwdillingham/aws_extension_course
+Entirely constant: https://github.com/gnaneshwarb/AWS
+https://github.com/jadalmiro/AWs
+https://github.com/juliensimon/aws
+https://github.com/sofiaisha/aws-julie
+Entirely constant: https://github.com/arjitn-sysadmin/AWSLearning
+Entirely constant: https://github.com/bobolee1239/AWS-Lex_n_Polly
+Entirely constant: https://github.com/nagen01/AWS_ML_Assignment
+https://github.com/Moverr/awsmlexamples
+Entirely constant: https://github.com/HarigovindV10/AWS-ML
+Entirely constant: https://github.com/msondkar/awsml
+Entirely constant: https://github.com/vsegouin/aws-personal-assistant
+Entirely Experimental: https://github.com/mkinney/aws_polly
+Entirely constant: https://github.com/mludvig/aws-polly
+Auto tool wrong detection: https://github.com/mohankrishna225/Aws-Polly
+Entirely constant: https://github.com/tadashigoto/AWS-Polly
+Entirely constant: https://github.com/mysticrenji/AWSPollyRekognitionWithPi
+https://github.com/mysticrenji/AWSPollyRekognitionWithPi
+Entirely constant: https://github.com/JAYMAC1/aws_python_test
+Entirely constant: https://github.com/ziniman/aws-rekognition-demo
+Auto tool wrong detection: https://github.com/devlab01/aws-rekognition
+Entirely constant: https://github.com/novagenio/AWS-Rekognition
+https://github.com/novagenio/AWS-Rekognition
+https://github.com/BFO92310/AWS_rekon
+Entirely constant: https://github.com/zbecker96/AWS_Say-labels
+Entirely constant: https://github.com/Mythridor/aws-scripting
+https://github.com/mugues/aws-terraform-sandbox
+https://github.com/aws-samples/aws-transcribe-captioning-tools
+Entirely constant: https://github.com/vijayraghu/banktellerpolly
+https://github.com/vijayraghu/banktellerpolly
+https://github.com/ZumeITInc/basicaws
+Entirely constant: https://github.com/theriley106/BookMeAlexa
+https://github.com/MatheusSuffi/boto3-text-audio
+Entirely constant: https://github.com/jeiros/BP-Hack
+Entirely constant: https://github.com/Jspujol/BP-Hack
+Entirely constant: https://github.com/MLCS-Yonsei/Brobot
+Entirely constant: https://github.com/bpalomino5/B.U.R.T.O.N.
+https://github.com/Menotron/captcha-cruncher
+Entirely constant: https://github.com/Axdy/ChadDevelopers
+Entirely constant: https://github.com/sumeet-iitg/ChatBotFramework
+https://github.com/sumeet-iitg/ChatBotFramework
+Entirely constant: https://github.com/andersonic/CheckIn-HackUMassV
+Entirely constant: https://github.com/graydh/Check-In
+Entirely constant: https://github.com/saubury/cocktail-pi
+Entirely constant: https://github.com/robotpt/cordial
+https://github.com/interaction-lab/cordial-public
+Entirely Experimental: https://github.com/scrntnstrnglr/CS7NS1-AudioCaptchaSolver
+Auto tool wrong detection: https://github.com/publiccoding/DataAnalytic
+Entirely Experimental: https://github.com/bkang97/Datathon2019
+Auto tool wrong detection: https://github.com/ssolkhan/deeplens-challenge
+Entirely constant: https://github.com/yiwasawa/demotenki
+https://github.com/bowojori7/DEXTER
+https://github.com/vijayraghu/dialogwithpolly
+https://github.com/JonesyPo/DIM
+Auto tool wrong detection: https://github.com/anchal-dhar/dobot-cloud-integration
+Entirely constant: https://github.com/A-Umali/Do.N.I.C.A
+Entirely constant: https://github.com/amruthasingh/DoorWatch
+Entirely constant: https://github.com/safaa-alnabulsi/dsr-serverless-course
+Entirely constant: https://github.com/phatjmo/eagi_lex
+https://github.com/philiparola/ece478-turtlebot
+https://github.com/lvoepel/ECE-479-579-Monkey-Banana
+https://github.com/aronjschwartz/ECE_578_Fall_2019
+Entirely constant: https://github.com/cbrooks1/ECE578_Schrodinger_Cat
+Entirely constant: https://github.com/datduyng/eduzon
+Entirely constant: https://github.com/devmittal/EID-Final-Project
+Entirely constant: https://github.com/mfinale/Embedded-Interface-design-class
+Entirely constant: https://github.com/Hyundoo-Jin/e-nav
+Auto tool wrong detection: https://github.com/djbritt/epiChat
+Entirely Experimental: https://github.com/Rene741114/examplesAWS
+Entirely constant: https://github.com/Vardhan-Korada/face-text-recognition
+Entirely Experimental: https://github.com/lol-fi/finddiscount
+https://github.com/realchief/Flask_mcon
+Auto tool wrong detection: https://github.com/klumbra/flatterbot-pi
+Entirely constant: https://github.com/rajputonnet/Friday_3
+Entirely constant: https://github.com/rajputonnet/Friday_AI
+Entirely constant: https://github.com/nagen01/From-VM
+Entirely Experimental: https://github.com/jsidberry/general-notes
+Entirely constant: https://github.com/linwen-dev/GOOGLE-SPEECH_NLP
+Auto tool wrong detection: https://github.com/mkyle1121/gopigo
+Entirely constant: https://github.com/heliumbtw/habar_bot
+Entirely constant: https://github.com/marciojv/hacks-cognitives-plataforms
+Entirely constant: https://github.com/p2pinnovation/hello-world
+Entirely Experimental: https://github.com/dixonaws/helloWorldPolly
+Auto tool wrong detection: https://github.com/Kjwon15/home-automations
+Entirely constant: https://github.com/chethanadukkipati/Home-Automation-System
+Entirely Experimental: https://github.com/AnweshaSen/Img_to_Vdo_Application
+https://github.com/satyajeetmaharana/IoTImageCaptioningCloud
+Entirely constant: https://github.com/anemilid/IoT-part1
+Entirely constant: https://github.com/anemilid/IoT-part2
+https://github.com/minori-m/Japanes_TTS
+Entirely constant: https://github.com/AliMahmoud7/jarvis
+Entirely constant: https://github.com/ritesh-bansal/JARVIS-VirtualAssistant
+https://github.com/juliensimon/johnnypi
+https://github.com/sofiaisha/johnnypi
+https://github.com/JuanCruz98/kiwi
+https://github.com/CMU-TBD/lab_ros_common
+Entirely constant: https://github.com/dtmilano/lex-bot-tester
+https://github.com/hypernovas/lipfuzzer
+Auto tool wrong detection: https://github.com/lijwee-e/ListenToMe
+https://github.com/lijwee-e/ListenToMe
+Entirely constant: https://github.com/wallaby72/locateme
+Entirely constant: https://github.com/temp3rr0r/Longsword-Data-MQTT-Publisher
+https://github.com/temp3rr0r/Longsword-Data-MQTT-Publisher
+https://github.com/pgmerek/Lynxmotion_Hexapod
+Auto tool wrong detection: https://github.com/holtrob/MarcoPolo
+Entirely constant: https://github.com/marlonsale08/Marlon
+Entirely constant: https://github.com/nikhilmukati/Marvel
+Entirely constant: https://github.com/akshaymathur62/mathur62
+https://github.com/kailashjadhav/Maya-AI-based-Personal-Virtual-Assistance-using-python
+Entirely constant: https://github.com/ankurCES/meeting_facilitator_bot
+https://github.com/Shangxz/MHacksDoorBell
+https://github.com/sapto7777/MHacksDoorBell-master
+https://github.com/winliewpai/ml15
+Entirely constant: https://github.com/sovanc/ML-on-AWS
+https://github.com/unimbekar/MovieSubtitles
+Entirely constant: https://github.com/Soosang-9/mubby_710
+https://github.com/juliensimon/mxnetworkshop
+https://github.com/sofiaisha/mxnetworkshop
+Auto tool wrong detection: https://github.com/MycroftAI/mycroft-core
+Entirely constant: https://github.com/dsikes/mynlp
+Entirely constant: https://github.com/anemilid/Myprojects
+https://github.com/lsf1999/MyStudyRoom
+Entirely constant: https://github.com/Vardhan-Korada/Navigation-Aid-for-Visually-Impaired-Persons
+Entirely constant: https://github.com/jandvanegas/notes-aws-developer-certificated
+Entirely constant: https://github.com/swb1701/NotiPi
+https://github.com/vijayraghu/optuscareforme
+https://github.com/vijayraghu/optuscareformev1
+Entirely constant: https://github.com/Justin01Wu/others
+Entirely constant: https://github.com/jonas-werner/p4voiceui
+https://github.com/varshajoshi36/parkinator
+Entirely constant: https://github.com/tyrm/ph-say
+Entirely constant: https://github.com/thangndu/pigate
+https://github.com/ozchamo/Piklok-V1.0-for-Pied-Piper
+Entirely constant: https://github.com/cheefoo/polly3s
+Entirely constant: https://github.com/jidr/pollycal
+Auto tool wrong detection: https://github.com/wcrtr/polly-converse
+https://github.com/rsharath/pollyhelper
+Auto tool wrong detection: https://github.com/rappdw/polly
+Entirely constant: https://github.com/ianmas-aws/polly-rekognition-demo
+Auto tool wrong detection: https://github.com/byeongkyu/polly_speech
+Auto tool wrong detection: https://github.com/jlim262/polly_speech
+Entirely constant: https://github.com/r030285/PollyTest
+Entirely constant: https://github.com/pimuzzo/polly-tts-basic
+Entirely constant: https://github.com/troylar/polly-tutor
+Entirely constant: https://github.com/davidberglund/polly-txt2speech
+Entirely constant: https://github.com/mvmnrao/PracticeProjects
+https://github.com/shiney5213/Project-HighLight_Video_Editor
+Auto tool wrong detection: https://github.com/haldarritam/Project-Tracker
+Auto tool wrong detection: https://github.com/adeshiel/ProNOWnce
+https://github.com/devshi-mehrotra/public-defender
+https://github.com/saubury/puppy-pi
+Entirely constant: https://github.com/konsan1101/pycv5
+Auto tool wrong detection: https://github.com/konsan1101/pyRiKi1
+Entirely constant: https://github.com/CristiVlad25/py-scripts-other
+Entirely constant: https://github.com/maroianenasrellah/py-scripts-other
+Entirely constant: https://github.com/jdc-cunningham/python_aws_polly_hacker_news_article_reader
+Auto tool wrong detection: https://github.com/cermegno/Python-AWS-Polly
+Auto tool wrong detection: https://github.com/Rivia-Team/Python-Coding-Projects
+Entirely constant: https://github.com/eltechno/python_course
+Entirely constant: https://github.com/mkyle1121/python-git
+https://github.com/tpalaz/PythonOUtdaded
+Auto tool wrong detection: https://github.com/bundgus/python-playground
+Entirely constant: https://github.com/tevin-morake/python-projects
+Entirely constant: https://github.com/charlesstoll/python_thief_game
+https://github.com/01-Jacky/Python-Things
+Entirely constant: https://github.com/msubzero2000/Qrio-public
+Entirely constant: https://github.com/101100/radiopi
+Entirely constant: https://github.com/aashrav/RaspberryPi
+Entirely constant: https://github.com/alexschultz/ReadToMe
+Entirely constant: https://github.com/marlonsale08/ReconocimientoFacialGlobalHitss-Peru
+Auto tool wrong detection: https://github.com/inci90/recycle-pi
+Auto tool wrong detection: https://github.com/dustingibson/reddit-to-voice-script
+Entirely constant: https://github.com/raju249/Rekognize
+Entirely constant: https://github.com/Christopheraburns/RePL_Cortex
+Entirely constant: https://github.com/RubensZimbres/Repo-2019
+Entirely constant: https://github.com/cute64627732/repository1
+https://github.com/mizuki2232/reserve-room
+Entirely constant: https://github.com/ArcherHuang/Robot
+https://github.com/Phasor2/Robotic-ECE478-Tutrtlebot2
+Entirely constant: https://github.com/dkoppad/Robotics-II---Elvis
+https://github.com/saubury/roomba-pi
+Auto tool wrong detection: https://github.com/PeterMitrano/RubeCodeburg
+Entirely constant: https://github.com/KarolinaH/Scoop
+https://github.com/grapealope/secrets
+Auto tool wrong detection: https://github.com/tstachlewski/serverless-application
+https://github.com/abeckn/serverless-apps
+Entirely constant: https://github.com/fernando-mc/serverless-webpage-reader
+Entirely constant: https://github.com/jason-klein/sgf-devs-deep-learning-api-examples-aws-2018
+Entirely constant: https://github.com/imTachu/ShakiraChatbot
+Entirely constant: https://github.com/anhqpho/SilentSound
+https://github.com/shiva-ram/smart-attendance
+Entirely constant: https://github.com/Poorvaa24/SmartHomeSecuritySystem-IoT-Project
+Entirely constant: https://github.com/MLCS-Yonsei/Speaker
+https://github.com/RykerXE/srtexpress
+Auto tool wrong detection: https://github.com/SUCCESS-MURI/success_polly_speech
+Auto tool wrong detection: https://github.com/TomAlanCarroll/synthia
+Entirely constant: https://github.com/CaptStephan/T3-Amanda
+Entirely constant: https://github.com/choijeonggyu/talented_kaist_class_1st
+Entirely constant: https://github.com/tsur/talker-toy
+https://github.com/PokaInc/talko-lingo
+Auto tool wrong detection: https://github.com/CMU-TBD/tbd_polly_speech
+Entirely constant: https://github.com/lobo-death/tccdatascience
+Entirely constant: https://github.com/burdaforward123/techday17
+Entirely constant: https://github.com/adarsh-basantwani/Technomate
+Entirely constant: https://github.com/hisashi-iida/test
+Entirely Experimental: https://github.com/rkmv7/test
+https://github.com/vladimir29/testing_gh_pages
+Auto tool wrong detection: https://github.com/HelloChatterbox/text2speech
+Entirely constant: https://github.com/Vinreddyc/Text-To-Speech-Generation-in-Cloud-
+https://github.com/UlucFVardar/Text-To-Speech
+Entirely constant: https://github.com/alankyuen/TheDailyHaiku
+https://github.com/djinn/transcode
+Auto tool wrong detection: https://github.com/gauravmehta26/TranscribeTranslate
+https://github.com/dakotasmith52/transcription
+https://github.com/xxw165230/TransformNewsToAudio
+Auto tool wrong detection: https://github.com/loudest/translate
+https://github.com/py-ranoid/Trippy
+https://github.com/elinasaunamaki/ttm-loppuprojekti
+Entirely constant: https://github.com/yonghankim/tts_time_check
+Entirely constant: https://github.com/ameerbadri/twilio-ivr-speech-bot
+Entirely constant: https://github.com/lerkasan/txt2mp3_aws_lambdas
+Entirely constant: https://github.com/96boards/ucsd-coursera
+Entirely constant: https://github.com/gezamboni/uscd-coursera
+Entirely constant: https://github.com/rohitmanglik/video-creator
+Entirely constant: https://github.com/saur98/VideoCreator_Json
+Entirely constant: https://github.com/sid779/Videorator
+https://github.com/md-farhan-memon/video-transcriber-translator
+https://github.com/acashmkj/Video-Translator
+Entirely constant: https://github.com/TurnTheBusVideo/video_upload_backend
+Entirely constant: https://github.com/travishermant/vikingbot2-ECE478
+Entirely constant: https://github.com/Kuldeepwadaskar/voiceassi
+https://github.com/fallaciousreasoning/VoiceSynth
+Entirely constant: https://github.com/reenusihag/vox
+Entirely constant: https://github.com/storyofcoder/vox
+Entirely constant: https://github.com/gogofunoliver/WeChatCon
+Entirely constant: https://github.com/Spijkervet/weebo
+Entirely constant: https://github.com/kmcyjm/welcome_home
+Entirely constant: https://github.com/ashish-sood/Whis-VA
+Auto tool wrong detection: https://github.com/markijzerman/wifiscreamer
+Auto tool wrong detection: https://github.com/tstachlewski/workshop
+Entirely constant: https://github.com/guanghao479/yoyoass
+Entirely constant: https://github.com/sirvive/ZedPA
+Entirely Experimental: https://github.com/nootherday/zeus-anki
+
+
+
+
+
+
+Total file searched: 1018
+Entirely Constants found: 146
+Experimental Constants found: 15
+Exceptions occurred: 75
+RELYING ON MANUAL CHECKING: 146 CONSTANT INPUTS
+RELYING ON MANUAL CHECKING: 943 RELEVANT TOTAL PROJECTS

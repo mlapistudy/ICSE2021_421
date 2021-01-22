@@ -1,0 +1,239 @@
+Auto tool wrong detection: https://github.com/hasanbanna/language-flashcards-generator
+Entirely constant: https://github.com/cherish1207/Sommeil
+Auto tool wrong detection: https://github.com/aleks24000/RPiButtonTranslator
+Auto tool wrong detection: https://github.com/Happy-fukuda/sp_ggi
+Entirely constant: https://github.com/raalzate/google-ia
+Entirely constant: https://github.com/joxelito950/talleresTechIA
+Entirely constant: https://github.com/dmweis/Hopper_ROS
+Entirely constant: https://github.com/nadavlotan6/TextToSpeech
+Entirely constant: https://github.com/Amn008/API-Conversion
+Entirely constant: https://github.com/parkjihwanjay/pokachip
+Auto tool wrong detection: https://github.com/RubensZimbres/Repo-2019
+Entirely constant: https://github.com/eziya/RPI_AIY_KIT_PYGAME
+Entirely constant: https://github.com/harleencore/instaLearn
+Entirely Experimental: https://github.com/StetsonMathCS/EasyBakeAI
+Auto tool wrong detection: https://github.com/jess305272/CodeJam-2018
+Auto tool wrong detection: https://github.com/KurtBurgess/FastNews
+Entirely Experimental: https://github.com/vinchinzu/aiyprojects-ext
+https://github.com/ptorto/lunchbox
+Entirely constant: https://github.com/EHowardHill/language-studies
+Entirely Experimental: https://github.com/mkanoria/Picturlate
+Entirely constant: https://github.com/juno1028/pokachip
+Auto tool wrong detection: https://github.com/bkang97/Datathon2019
+Auto tool wrong detection: https://github.com/coledixon/Misty_robotics
+Auto tool wrong detection: https://github.com/fpetras/google-translate-cli
+Entirely constant: https://github.com/tinkrmind/electronTestbed
+Entirely constant: https://github.com/AlejandroCabeza/sounds_of_runeterra
+Entirely constant: https://github.com/rainman0607/ALMA-RASP
+Entirely constant: https://github.com/lohriialo/texttospeech
+Entirely constant: https://github.com/amirkatzster/pi-robot
+Auto tool wrong detection: https://github.com/jzwang43/UnCaptcha2.0
+Entirely constant: https://github.com/mozamonkey/yhacks_2019
+Entirely constant: https://github.com/Maharacha/cat_chaser
+Entirely constant: https://github.com/ApolloHackonauts/flashwords
+Auto tool wrong detection: https://github.com/christian-rncl/UnCaptcha2.0
+Entirely constant: https://github.com/WiktorJ/magichat
+Entirely constant: https://github.com/kevinvu184/SmartRecipes
+Entirely constant: https://github.com/FernandoBoza/red
+Entirely constant: https://github.com/advaiths12/Echo_Smart_Cane
+Auto tool wrong detection: https://github.com/CruzHacks2019/iris-raspi
+Auto tool wrong detection: https://github.com/2019-openhack/WEB
+Entirely constant: https://github.com/NicolasCapparelli/Project-Valery
+Entirely constant: https://github.com/branscha/speech-to-text
+Auto tool wrong detection: https://github.com/ddonau/iotc
+Entirely constant: https://github.com/TSykes21/hackmit2018
+Entirely constant: https://github.com/hackabit19/_destroyingRecursively_
+Entirely constant: https://github.com/kingofleaves/NetDragon2017-18
+Entirely constant: https://github.com/tom6311tom6311/IOTProject4
+Entirely constant: https://github.com/leestanley/learn.ly
+Entirely constant: https://github.com/anish-krishnan/Echo
+Auto tool wrong detection: https://github.com/lnogueir/HackTheNorth2019
+https://github.com/ktrips/RasAi
+https://github.com/loveAlakazam/2018-Cheonan-Market-Project
+Entirely constant: https://github.com/hong9lol/HWE
+Auto tool wrong detection: https://github.com/cranb3rry/topS
+Entirely constant: https://github.com/tabris2015/nayra_api
+Entirely constant: https://github.com/LunaTK/ARTIK-LED-Mask-Client
+Entirely constant: https://github.com/jammmo/OptimusPrime
+Entirely constant: https://github.com/mihanich/MY-assistant
+Entirely constant: https://github.com/sheylavperez/bytehacks
+Entirely constant: https://github.com/jackyeightzhang/Prototype-Discord-Text-to-Speech
+Entirely constant: https://github.com/shrkw/traininfo_notifier
+Entirely constant: https://github.com/sbssai123/tech-for-her
+Entirely constant: https://github.com/imr-framework/amri
+Entirely constant: https://github.com/s92025592025/CSE475-Voice-Control-System
+Entirely constant: https://github.com/ropable/texttospeech
+Entirely constant: https://github.com/ml-bois/know-it-all-backend
+Auto tool wrong detection: https://github.com/kvargha/GoogleSinger
+Entirely constant: https://github.com/GrayGorilla/whosthere
+Auto tool wrong detection: https://github.com/Nooder/WaveNet-Text-To-Speech-Project
+Entirely constant: https://github.com/Pruthviraj98/InControl
+Entirely constant: https://github.com/Herbse/LauraBot
+Entirely Experimental: https://github.com/kunalchandiramani/InControl
+Entirely constant: https://github.com/blavad/arcade-voice
+Auto tool wrong detection: https://github.com/gssankar/googlecloudplatform
+Auto tool wrong detection: https://github.com/taityo/lam
+Auto tool wrong detection: https://github.com/iamLoi/Python-Random-Number-Generator
+Auto tool wrong detection: https://github.com/KedamawiMulualem/MapingWithInterction
+Entirely constant: https://github.com/chaityabshah/hackgt19
+Entirely constant: https://github.com/kevincuax/calhacks_2019-Quiz_Friend
+Entirely constant: https://github.com/joeyipdellemc/SmartArm
+Auto tool wrong detection: https://github.com/edjwing/gcp-dictionary
+Auto tool wrong detection: https://github.com/fugje123/Team_Hi-Pass
+Entirely constant: https://github.com/hsong124/LearntoType
+Auto tool wrong detection: https://github.com/dray01/python-vision-pipeline
+Auto tool wrong detection: https://github.com/skyler1253/clinical-speech-audio
+Auto tool wrong detection: https://github.com/mgeerling/autoscaler
+Auto tool wrong detection: https://github.com/garzarobm/hackTx
+Entirely constant: https://github.com/Mrvys/cir
+Entirely constant: https://github.com/nansystem/reading-package
+Auto tool wrong detection: https://github.com/Sinclair-Seo/SPT-2001_GoogleCloud_StackDriver
+Auto tool wrong detection: https://github.com/rupin/WrittenAudioCloudFunctions
+Auto tool wrong detection: https://github.com/capibar/gcp-serverless-python-test
+Entirely constant: https://github.com/yashaslokesh/100-Days-Of-Code
+Entirely constant: https://github.com/xpurts/TheHoneyCombs
+https://github.com/xpurts/TheHoneyCombs
+Entirely constant: https://github.com/HackRoboy/magichat
+https://github.com/HackRoboy/magichat
+Entirely constant: https://github.com/brianehenyo/navigo-agents
+Auto tool wrong detection: https://github.com/SlidingSteven/PythonAppEngine
+Auto tool wrong detection: https://github.com/arbiben/text-to-speech
+Entirely constant: https://github.com/siwon2/smartmirror
+Entirely constant: https://github.com/mtochs/GoogleCloud
+Entirely constant: https://github.com/nfrumkin/ElMingle
+Entirely constant: https://github.com/mgh3326/AIInnovationSpeechRecognition
+Entirely constant: https://github.com/agathver/Voicemail
+Entirely constant: https://github.com/YangZhao71/FreestylePi
+Auto tool wrong detection: https://github.com/ishikawa-ken/gcp_texttospeech
+Auto tool wrong detection: https://github.com/MayankSur/EE4-Human-Centered-Robotics
+Auto tool wrong detection: https://github.com/jdh747/pocket-reader
+Entirely constant: https://github.com/loveAlakazam/Capstone2_prof.Mjung
+Auto tool wrong detection: https://github.com/LCAD-UFES/carmen_lcad
+Entirely constant: https://github.com/dlabsai/hackathon2019
+Entirely constant: https://github.com/jiachengzhang1/Misciker
+https://github.com/PokaInc/talko-lingo
+Entirely constant: https://github.com/themainingredient/escaperoom
+Entirely constant: https://github.com/yassansplus/VocalAssistant
+Entirely constant: https://github.com/ntheanh201/ProPTIT.AIF
+Entirely constant: https://github.com/ssyz/speech2text
+Entirely constant: https://github.com/jobiewinser/Corduroy-
+Entirely constant: https://github.com/vinayprabhu/BurningMan2019
+Entirely constant: https://github.com/kookmin-sw/2019-cap1-2019_6
+Auto tool wrong detection: https://github.com/type-a/image-to-speech
+Entirely constant: https://github.com/Andreyglass1989/Swift_Avia_Group
+Entirely constant: https://github.com/ahmedmansoub/snowboyProject
+https://github.com/UlucFVardar/Text-To-Speech
+Auto tool wrong detection: https://github.com/PranavEranki/TVDub
+Auto tool wrong detection: https://github.com/Sail338/Subadubdub
+Auto tool wrong detection: https://github.com/aleks24000/RPiRecorder
+Entirely constant: https://github.com/coolpulkit99/pbsol
+Entirely constant: https://github.com/jdegrootlutzner/redial
+Auto tool wrong detection: https://github.com/AtilioA/web-scraping-for-sentence-mining
+https://github.com/AtilioA/web-scraping-for-sentence-mining
+Auto tool wrong detection: https://github.com/ibro45/Speech-to-Speech-Translator
+Entirely constant: https://github.com/mansur007/book_assistant
+Auto tool wrong detection: https://github.com/SirObi/google-translate-collector
+Entirely constant: https://github.com/MrMiaoMiao/life-pointer
+Auto tool wrong detection: https://github.com/OkanoShogo0903/CommandControl
+Entirely constant: https://github.com/yiluzeng/HackMITHousing
+Entirely constant: https://github.com/Banzyme/iNote-remote
+Entirely constant: https://github.com/OkanoShogo0903/o_gpsr_2018
+Auto tool wrong detection: https://github.com/HappyKoyo/tm_speech_person_recognition
+Entirely constant: https://github.com/HeidiZHH/CCST9015VirtualRoommate
+Entirely constant: https://github.com/yonghankim/tts_time_check
+Entirely constant: https://github.com/jimdinunzio/google-text-to-speech-demo
+Entirely constant: https://github.com/PeterQuinn396/Assistant
+Entirely constant: https://github.com/jp798/chatbot_aiy_group
+Entirely constant: https://github.com/alexisperrier/XEmines_DataScience_2020
+https://github.com/KurtCoVayne/Trigo-Python
+Entirely constant: https://github.com/jim-schwoebel/voicebook
+Entirely constant: https://github.com/SecurityQQ/CandyAI
+Entirely constant: https://github.com/hfg-gmuend/1819-designing-systems-using-voice
+Auto tool wrong detection: https://github.com/zhongzishi/cohort-project
+Auto tool wrong detection: https://github.com/Lagousis/PythonTests
+Entirely constant: https://github.com/NaohiroTamura/assistant-sdk-python
+https://github.com/NaohiroTamura/assistant-sdk-python
+Auto tool wrong detection: https://github.com/oayllon-bf/pythoncourse
+https://github.com/dylan-hoffmann/Talk2Me
+Auto tool wrong detection: https://github.com/fang2hou/ICEAgent
+Entirely constant: https://github.com/AparnaDubagunta98/VATBOT
+Entirely constant: https://github.com/PrinceGupta1999/HackIIITD
+Auto tool wrong detection: https://github.com/abhoi/Speech2Code
+Entirely constant: https://github.com/codesmary/PixReader
+Entirely constant: https://github.com/devanshbatra04/hawking-native
+https://github.com/devanshbatra04/hawking-native
+Entirely constant: https://github.com/arielm7/LevelUP
+https://github.com/arielm7/LevelUP
+Entirely constant: https://github.com/lava1980/translator-bot
+Auto tool wrong detection: https://github.com/JC2615/In-The-Works
+https://github.com/vislab-tecnico-lisboa/vizzy_speech
+Auto tool wrong detection: https://github.com/spshah/Projects
+Entirely constant: https://github.com/qingyli/Baby_Yoda
+Auto tool wrong detection: https://github.com/murufon/bukiBot
+Entirely constant: https://github.com/22lizabeth/robot_faces
+Auto tool wrong detection: https://github.com/tolgadur/robot-brain-cluster
+Entirely constant: https://github.com/Roboy/soncreo
+Entirely constant: https://github.com/TheMatrixMaster/VirtualPatientBackend
+Auto tool wrong detection: https://github.com/cairo-robotics/cairo-nlp
+https://github.com/eteohx/make_pseudo_sentences
+Entirely constant: https://github.com/SunjanaK/TartanHacks2k19
+Entirely constant: https://github.com/swestwood/talkingbear
+Auto tool wrong detection: https://github.com/yifan-cloud/BrailleVision
+Entirely constant: https://github.com/SeverMateus/iwpuab
+Entirely constant: https://github.com/Ghirish/School-Security
+Auto tool wrong detection: https://github.com/kureuetan/Image_Recognition_PiCamera_Google_AIY_Voice_Kit
+https://github.com/Haley-Jang/CNIT581_ATR_Project
+Entirely constant: https://github.com/Jts996/Smart-Mirror-AI-Assistant
+Auto tool wrong detection: https://github.com/omar-h-omar/TranslateMe
+https://github.com/tbx1024/yeetbot
+Entirely constant: https://github.com/sweettuse/utils
+Entirely constant: https://github.com/sizuhiko/custom-smart-speaker
+Entirely constant: https://github.com/ancadiana23/AirlineCustomerServiceBot
+Entirely constant: https://github.com/dabarkster/escapee-validator
+Entirely constant: https://github.com/mvrt-115/google_arm_project
+Entirely constant: https://github.com/nbortolotti/tensorflow-experiences
+https://github.com/windlessStorm/allspeak
+Entirely constant: https://github.com/lia-mason/moodapp
+Entirely constant: https://github.com/cyndi5/homecast
+Entirely constant: https://github.com/dabarkster/escapee-greetor
+https://github.com/vijayraghu/optuscareformev1
+Auto tool wrong detection: https://github.com/ecchochan/aiohttp_tts
+Entirely constant: https://github.com/seongbeenkim/Iot-piggybank
+Auto tool wrong detection: https://github.com/noisyGhost/VAPA
+Entirely constant: https://github.com/calpoly-csai/NIMBUS_RPi_Implementation
+Entirely constant: https://github.com/SunjanaK/HackCMU2k18
+Auto tool wrong detection: https://github.com/dariooliveirajr/openread_ocr
+Auto tool wrong detection: https://github.com/bandofpv/Reading_Eye_For_The_Blind
+https://github.com/vijayraghu/optuscareforme
+Entirely constant: https://github.com/AbhayVarshney/ncaa-basketball-predictor
+Entirely constant: https://github.com/ShazeRx/MementoOS
+https://github.com/vijayraghu/banktellerpolly
+https://github.com/vijayraghu/careformedgfv2
+https://github.com/vijayraghu/testoptustwil
+Auto tool wrong detection: https://github.com/pausa/ambrogio
+https://github.com/anilberkaltuner/Atlantis-assistant
+Entirely constant: https://github.com/Parikshit-07/Google-AIY
+Entirely constant: https://github.com/serhatkimya/Googleassistant
+Auto tool wrong detection: https://github.com/david-andrew/Ensemble
+Entirely constant: https://github.com/TejinderPurba/GassistPi
+Entirely constant: https://github.com/antoz88/Artificial-Intelligence
+Entirely constant: https://github.com/PriyankaChauhan1802/Google-AIY
+Entirely constant: https://github.com/jcksnmdy/smartpit
+Entirely constant: https://github.com/Coach-UX/hey-rexy
+https://github.com/Coach-UX/hey-rexy
+Entirely constant: https://github.com/AdnanPatel1/SmartAssistant
+Entirely constant: https://github.com/akshathjkxx007/SAM-assistant
+Entirely constant: https://github.com/shivasiddharth/GassistPi
+Entirely constant: https://github.com/iHimanshu2/VisionX
+
+
+
+
+
+
+Total file searched: 711
+Entirely Constants found: 133
+Experimental Constants found: 4
+Exceptions occurred: 25
+RELYING ON MANUAL CHECKING: 133 CONSTANT INPUTS
+RELYING ON MANUAL CHECKING: 686 RELEVANT TOTAL PROJECTS
