@@ -46,7 +46,15 @@ They are located in `Tools` folder. Each contains a seperate README file describ
 
 ### Manual Study
 
-Our manual study result in Table III could be obtained from `Mis-uses` folder, by statistic analysis on mis-use list.
+Our manual study result in Table III could be obtained from `Mis-uses` folder.
+
+In `Mis-uses/ML API misuse list.xlsx`, there are two tabs:
+
+1. Data tab: Contains mis-uses founded in our manual study. It also has a copy in `Mis-uses/ML API misuse list.csv`
+2. Analyze tab: it inclues excel formula for computing the mis-use count based on the numbers in the Data tab. The cells for computation are colored with light blue.
+   1. Column X: # of types of API misuses in each applications
+   2. Row 255: # of problematic projects for each anti-pattern
+   3. Row 259-275: A copy of Table III
 
 ### Auto Detection
 

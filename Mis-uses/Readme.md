@@ -6,8 +6,14 @@ We provide data in both excel and csv format.
 
 
 
-The numbers represent number of misuses in applications, counted by code locations.
+In `Mis-uses/ML API misuse list.xlsx`, there are two tabs:
 
-Google Vision have `batch_annotate_images` and `annotate_images` APIs for general API call. To make description clear, we use the exact function instead, e.g.`label_detection`.
+1. Data tab: Contains mis-uses founded in our manual study. It also has a copy in `Mis-uses/ML API misuse list.csv`
+   1. The numbers in data tab represent number of misuses in applications, counted by code locations.
+   2. Google Vision have `batch_annotate_images` and `annotate_images` APIs for general API call. To make description clear, we use the exact function instead, e.g.`label_detection`.
+2. Analyze tab: it inclues excel formula for computing the mis-use count based on the numbers in the Data tab. The cells for computation are colored with light blue.
+   1. Column X: # of types of API misuses in each applications
+   2. Row 255: # of problematic projects for each anti-pattern
+   3. Row 259-275: A copy of Table III
 
-
+### 
