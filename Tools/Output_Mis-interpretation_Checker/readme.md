@@ -4,9 +4,9 @@ This folder includes Output Mis-interpretation Checker (Section VII). I
 
 1. [Package dependencies](#depend)
 2. [Credentials](#credentials)
-3. [File description](＃file)
-4. [Usage](＃usage)
-5. [Reproduce results in our paper](＃reproduce)
+3. [File description](#file)
+4. [Usage](#usage)
+5. [Reproduce results in our paper](#reproduce)
 
 
 
