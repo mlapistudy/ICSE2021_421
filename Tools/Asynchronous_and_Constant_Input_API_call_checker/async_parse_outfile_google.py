@@ -257,10 +257,6 @@ while i < len(lines):
                 break
         i += 1
 
-    # after = get_all_add_up()
-    # if begin == after or after != allfile:
-    #     print("There is one not accounted for: {}".format(lines[k]))
-    #     exit(1)
     i = j
 
 ofd.write("\n\n==================================================================\n")
@@ -274,13 +270,9 @@ if not MANUAL_CHECKING:
     print_writeofd("{}, No pattern identified".format(nopattern + det_no_pattern), ofd)
     print_writeofd("{}, No use of parallelism".format(noparrelism), ofd)
     print_writeofd("{}, Possible use of parallel cases".format(possible_para), ofd)
-    # print_writeofd("{}, Codes in between (not counted towards the final count below)".format(between_code), ofd)
     print_writeofd("RELYING ON AUTO TOOL: {} NO USE OF PARALELLISM".format(noparrelism), ofd)
     print_writeofd("RELYING ON AUTO TOOL: {} PARALELLISM USED".format(possible_para + nopattern + det_no_pattern), ofd)
     print_writeofd("RELYING ON AUTO TOOL: {} RELEVANT TOTAL PROJECTS".format(noparrelism + possible_para + nopattern + det_no_pattern), ofd)
-# all_above = get_all_add_up()
-# print_writeofd("", ofd)
-# print_writeofd("{}, Adding all above together".format(all_above), ofd)
 
 elif MANUAL_CHECKING:
     print_writeofd("", ofd)

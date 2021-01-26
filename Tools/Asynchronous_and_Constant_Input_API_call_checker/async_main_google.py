@@ -484,9 +484,8 @@ if __name__ == "__main__":
                 all_fct_name = treelist2list(v.all_fct_name)
                 print_writeofd("Now searching to see if parallel API takes place in the same file as function traced", ofd)
                 for item in total_url_list:
-                    # urlcontent = get_url_content(item, ofd)
                     for fct in all_fct_name:
-                        if item in fct[2]: #and "{}".format(fct[0]) in "{}".format(urlcontent):
+                        if item in fct[2]:
                             print_writeofd("BOTH IDENTIFIED IN THE SAME FILE: [function: {}] [url: {}".format(fct, item), ofd)
                 functionnames = []
             elif len(total_url_list) == 0:
