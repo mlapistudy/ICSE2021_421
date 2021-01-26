@@ -1,6 +1,6 @@
 # README
 
-This folder includes Output Mis-interpretation Checker (Section VII). I
+This folder includes Output Mis-interpretation Checker. It will reproduce the data in the third paragraph of Section VII ("Among the 975 GitHub Python applications that use this API, our checker finds 360 of them interpreting the API output incorrectly.") and the second row in Table III ("360 (37%)").
 
 1. [Package dependencies](#depend)
 2. [Credentials](#credentials)
