@@ -22,9 +22,13 @@ This folder contains source files for the asynchronous API call checker. Note th
 ## Package dependencies <a name="async_pack"></a>
 
 Python >= 3.8.0
+
 astor >= 0.8.1
+
 anytree >= 2.8.0
+
 PyGithub >= 1.51
+
 urllib3 >= 1.25.9
 
 Note that Python 3.8 is required because the AST tool this file uses works **only in Python 3.8 or higher versions**. In previous versions errors are expected in AST-related executions.
@@ -188,8 +192,11 @@ This folder contains source files for the asynchronous API call checker.
 ## Package dependencies <a name="constant_pack"></a>
 
 Python >= 3.8.0
+
 anytree >= 2.8.0
+
 PyGithub >= 1.51
+
 urllib3 >= 1.25.9
 
 Note that Python 3.8 is required because that the AST tool this file uses works **only in Python 3.8 or higher versions**. In previous versions errors are expected in AST-related executions.
