@@ -266,4 +266,10 @@ The `*_auto.txt` files in the last column were ran with the `-a` flag turned on 
 | `texttospeech_res_Python.txt`                 | `google_constant_out.txt`                              | `google_constant_list_auto.txt` <br> `google_constant_list_manual.txt`                                  |
 | `polly_res_Python.txt`                        | `aws_constant_out.txt`                                 | `aws_constant_list_auto.txt` <br> `aws_constant_list_manual.txt`                                       |
 
-The final counts from the last column of these two tables make up the data in **section VII** of our paper.
+The final counts from the last column of these two tables make up the data in **section VII** of our paper. More specifically, 
+|                         Section in Paper                        |                                            Results it refers to in `results`                                           |
+|:---------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------:|
+|    Section VII - "Asynchronous API call checker"<br>(Google)    | Auto result refers to `google_async_stt_list_auto.txt`<br>Manual checking refers to `google_async_stt_list_manual.txt` |
+|      Section VII - "Asynchronous API call checker"<br>(AWS)     |  Refer to combined <br>`aws_async_tts_list_auto.txt`<br>`aws_async_nlp_list_auto.txt`<br>`aws_async_stt_list_auto.txt` |
+| Section VII - "Constant-parameter API call checker"<br>(Google) |  Auto result refers to `google_constant_list_auto.txt`<br>Manual checking refers to `google_constant_list_manual.txt`  |
+|   Section VII - "Constant-parameter API call checker"<br>(AWS)  |     Auto result refers to `aws_constant_list_auto.txt`<br>Manual checking refers to `aws_constant_list_manual.txt`     |
