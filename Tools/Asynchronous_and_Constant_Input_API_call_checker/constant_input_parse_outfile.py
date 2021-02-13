@@ -81,14 +81,9 @@ while i < len(lines):
         i += 1
         if "EXCEPTION" in lines[i]:
             excepted = 1
-
-    # if printed_ent or experi:
-    #     printed_ent_count += 1
-    # if printed_par:
-    #     printed_par_count += 1
  
     if MANUAL_CHECKING:
-        if printed_ent == 1: #or printed_par == 1: 
+        if printed_ent == 1:
             print("Does the above snippet contains an actual string constant? If constant, press 1, if not, press 2, if looks like for experimental purpose, press 3")
             user = input()
             while user != '1' and user != '2' and user != '3':
@@ -124,7 +119,6 @@ while i < len(lines):
 print_writeofd("\n\n\n\n\n", ofd1)
 print_writeofd("Total file searched: {}".format(allfile), ofd1)
 print_writeofd("Entirely Constants found: {}".format(accocc_ent), ofd1)
-# print_writeofd("Partly Constants found: {}".format(accocc_par), ofd1)
 print_writeofd("Experimental Constants found: {}".format(experi_ent), ofd1)
 print_writeofd("Exceptions occurred: {}".format(excep), ofd1)
 
