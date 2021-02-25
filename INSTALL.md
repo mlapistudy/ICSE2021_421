@@ -49,6 +49,10 @@ To install these packages:
 /usr/bin/python3.8 -m pip install google-cloud-language==1.3.0 --user
 /usr/bin/python3.8 -m pip install google-cloud-vision==1.0.0 --user
 /usr/bin/python3.8 -m pip install google-cloud-speech==2.0.0 --user
+/usr/bin/python3.8 -m pip install google-cloud-texttospeech==2.2.0 --user
+/usr/bin/python3.8 -m pip install google-api-python-client==1.10.0 --user
+/usr/bin/python3.8 -m pip install google-auth-httplib2==0.0.4 --user
+/usr/bin/python3.8 -m pip install google-auth-oauthlib --user
 ```
 
 To enable APIs in Google account and create credentials, please following Google official document
@@ -64,6 +68,7 @@ Then for files in  `Tools/API_wrappers` folder , please change line `os.environ[
 For other packages:
 
 ```bash
+/usr/bin/python3.8 -m pip install pillow==5.3.0
 /usr/bin/python3.8 -m pip install jedi==0.17.0
 /usr/bin/python3.8 -m pip install astor==0.8.1
 /usr/bin/python3.8 -m pip install anytree==2.8.0
